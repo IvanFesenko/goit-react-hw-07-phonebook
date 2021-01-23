@@ -12,3 +12,7 @@ export const getContacts = async () => {
 export const addContact = async contact => {
   await Axios.post('/contacts', contact);
 };
+
+export const deleteContact = async id => {
+  await Axios.delete(`/contacts/${id}`);
+};
