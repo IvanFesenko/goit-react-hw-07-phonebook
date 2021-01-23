@@ -5,7 +5,7 @@ const Axios = axios.create({
 });
 
 export const getContacts = async () => {
-  const { data } = await Axios.get('/contacts');
+  const { data } = await Axios.get('/contacts?_sort=name');
   return data;
 };
 
